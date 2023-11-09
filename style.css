@@ -295,39 +295,103 @@ html.lenis {
   }
 }
 
+/* Bg-1*/
+
+.bg-1 {
+  height: 50vh;
+  width: 100vw;
+  overflow: hidden;
+  object-fit: contain;
+}
+
+.bg-1 img {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  /* object-position: 0% 0%; */
+}
+
 /* Works */
 
 .works {
   min-height: 100vh;
   width: 100vw;
   display: flex;
+  margin-top: 20vh;
 }
 
 .work-list {
   position: sticky;
   top: 80px;
   height: 100%;
-  width: 40vw;
-  margin-right: 10px;
+  width: 20vw;
+  margin: 0 10px 0 20px;
 }
 
 .work-title {
   font-family: var(--montserrat);
-  font-size: 15px;
+  font-size: 13px;
   margin: 15px 5px;
+  cursor: pointer;
+  text-align: end;
 }
 
 .showcase-container {
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.showcase {
   border: 1px solid var(--primary);
-  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 100%;
 }
 
 .showcase img {
   width: 80%;
   object-fit: contain;
-  margin: 10px 10px;
+  margin: 10px;
   border: 1px solid #000000;
   padding: 10px;
 }
+
+@media (min-width: 768px) {
+  .showcase img {
+    margin: 20px;
+  }
+
+  .work-title {
+    font-size: 18px;
+  }
+
+  .showcase {
+    width: 80%;
+  }
+
+  .showcase img {
+    width: 90%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .showcase img {
+    width: 90%;
+  }
+
+  .work-title {
+    font-size: 20px;
+  }
+
+  .showcase {
+    width: 60%;
+    height: 100%;
+  }
+}
+
+/* about */
